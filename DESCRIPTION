@@ -1,7 +1,7 @@
 Package: electoral
 Type: Package
 Title: Allocating Seats Methods and Party System Scores
-Version: 0.1.0
+Version: 0.1.1
 Author: Jorge Albuja
 Maintainer: Jorge Albuja <albuja@yahoo.com>
 Description: Highest averages & largest remainders allocating seats methods and
@@ -29,6 +29,6 @@ LazyData: true
 Imports: dplyr, ineq, tibble
 RoxygenNote: 6.0.1
 NeedsCompilation: no
-Packaged: 2017-09-28 14:58:17 UTC; jorge
+Packaged: 2018-10-24 23:45:48 UTC; jorgea
 Repository: CRAN
-Date/Publication: 2017-09-28 19:17:53 UTC
+Date/Publication: 2018-10-25 04:20:03 UTC

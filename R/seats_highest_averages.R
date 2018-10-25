@@ -61,9 +61,6 @@ seats_ha <- function(parties,
           group_by(PARTY) %>%
           summarise(SEATS=n())
 
-     #print('DIVISORS')
-     #print(divisores)
-
      if(sum(seats$SEATS) != n_seats) {
           empates <- cocientes %>%
                filter(ORDEN > length(divisores)) %>%
@@ -82,8 +79,8 @@ seats_ha <- function(parties,
           left_join(seats, by = "PARTY") %>%
           mutate(SEATS = ifelse(is.na(SEATS), 0L, as.integer(SEATS)))
 
-     #print('SEATS ALLOCATED')
-     #print(seats)
-     invisible(as.vector(seats$SEATS))
+     seats <- as.vector(seats$SEATS)
+     names(seats) <- parties
+     seats
 }
 

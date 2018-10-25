@@ -1,12 +1,12 @@
-736665b0aeab45549653bdfb2b2c241b *DESCRIPTION
+0fb0374f063349c00ca299de63e5add2 *DESCRIPTION
 7c611ffc6ec2635fb6248c738a0a2927 *NAMESPACE
 05cf2ea9faaf2c6cb687e52fe0841e7e *R/competitiveness.R
 bad9b281d3db50ac36512810dd68f6bb *R/concentration.R
 206a414fafa5256a09aa990776f5bbfe *R/effective_number_of_parties.R
 c951bb5f21ec7f42117df11aff61fb48 *R/party_nationalization_score.R
 36d9a6cd1ffd9d6d24e2ce5d0cf95446 *R/party_system_nationalization_score.R
-e4c043cf59d93104aa84bc8869d2320e *R/seats_highest_averages.R
-3787dd3df76dd2288c8f67395da966e1 *R/seats_largest_reminders.R
+265e5d0ae8495d82e76901ddf5f6d87c *R/seats_highest_averages.R
+4024287dea0e9ecc58e38ea91847b51f *R/seats_largest_reminders.R
 8cb186f608810bee3a04df24fd96a2cd *R/volatility.R
 2ba51288d098ee33c47e5a6f6ebc6a37 *README.md
 d2ca7e89bec04b831277205a79cb61b1 *man/competitiveness.Rd

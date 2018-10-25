@@ -65,8 +65,9 @@ seats_lr <- function(parties,
           print(c('Parties in tie:', empates$PARTY))
      }
 
-     #print('SEATS ALLOCATED')
-     #print(seats)
-     invisible(as.vector(seats$SEATS))
+     seats <- as.vector(seats$SEATS)
+     names(seats) <- parties
+     seats
+
 }
 
