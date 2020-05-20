@@ -2,10 +2,11 @@
 \alias{pns}
 \title{Party Nationalization Score (PNS)}
 \usage{
-pns(subnational_shares)
+pns(subnational_shares, method)
 }
 \arguments{
 \item{subnational_shares}{vector of vote shares per subnational unit (province) for a single party}
+\item{method}{string to choose from c('Jones-Mainwaring', 'Golosov'). Defaults to 'Jones-Mainwaring'}
 }
 \value{
 A single numeric with party nationalization score of a party, in the interval [0, 1]
@@ -25,10 +26,13 @@ Party nationalization score is a number from 0 to 1, a low value (near 0) means 
 
 High score (near 1) indicates a high level of nationalization, i.e. homogeneous distribution of vote shares in subnational territorial units.
 
+A new approach developed by Golosov (2014) 'Party System Nationalization: The Problems of Measurement with an Application to Federal States' (http://ppq.sagepub.com/content/early/2014/09/08/1354068814549342.abstract) is also available.  
+
 See \code{\link{psns}} function for further information.
 
 Developed by Jorge Albuja Delgado (albuja@yahoo.com).
 }
 \examples{
-pns(subnational_shares = c(0.3, 0.1, 0.2))
+pns(subnational_shares = c(0.467265, 0.542505))
+pns(subnational_shares = c(0.467265, 0.542505), method = 'Golosov')
 }

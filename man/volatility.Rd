@@ -5,8 +5,8 @@
 volatility(votes_1, votes_2)
 }
 \arguments{
-\item{votes_1}{vector of number o proportion of votes/seats per party at time t-1 (previous election)}
-\item{votes_2}{vector of number o proportion of votes/seats per party at time t (given election}
+\item{votes_1}{vector of number/share of votes/seats per party at time t-1 (previous election)}
+\item{votes_2}{vector of number/share of votes/seats per party at time t (given election}
 }
 \value{
 A single numeric with volatility value in the interval [0, 1]

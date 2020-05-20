@@ -1,8 +1,4 @@
-#  Parties System Indicators
-#
-# Concentration
-# Consejo Nacional Electoral - Ecuador (2014)
-#
+#  Party System Indicators - Concentration----
 
 concentration <- function(votes) {
      if (class(votes) != 'numeric') {

@@ -8,7 +8,7 @@ seats_ha(parties, votes, n_seats, method)
 \item{parties}{vector of names of parties, must be uniques}
 \item{votes}{vector of votes, same length as parties.}
 \item{n_seats}{number of seats to be allocated (integer equal or greater 1).}
-\item{method}{string according seat allocating method: "dhondt", "webster", "danish", "imperiali", "hill-huntington", "dean", "mod-saint-lague", "equal-proportions" or "adams".}
+\item{method}{string according seat allocating method: 'dhondt', 'webster', 'danish', 'imperiali', 'hill-huntington', 'dean', 'mod-saint-lague', 'equal-proportions' or 'adams'.}
 }
 \value{
 A vector of the number seats allocated for each party in 'parties', with the same length as parties and votes.
@@ -28,7 +28,7 @@ Hill-Huntington: divisors sqrt(2), sqrt(6), sqrt(12), sqrt(20), sqrt(30), ... (n
 
 Dean: divisors 4/3, 12/5, 24/7, 40/9, 60/11, ... (nth divisor: (2*n)*(n+1)/(2*n+1))
 
-Modified Sainte-Lague: 1, 15/7, 25/7, 35/7, 45/7 (1st divisor: 1, nth divisor: (10*n-5)/7)
+Modified Sainte-Lague: 1, 15/7, 25/7, 35/7, 45/7 (nth divisor: (10*n-5)/7)
 
 Equal proportions: 0, sqrt(2), sqrt(6), sqrt(12), sqrt(20), ... (nth divisor: sqrt(n*(n-1)))
 
@@ -36,20 +36,18 @@ Adams: 0, 1, 2, 3, 4, ... (nth divisor: n-1)
 
 where n = 1, 2, 3... until number of seats to be allocated
 
-Currently methods used in Ecuador are: Webster (divisors 1,3,5...) for assembly national representatives and D'Hondt (divisors 1,2,3..) otherwise.
-
 In case of ties, the implemented algorithm not allocate the involved seats, and prints how many seats had been allocated and how many are in tie.
 
 Developed by Jorge Albuja Delgado (albuja@yahoo.com).
 }
 \examples{
-seats_ha(parties = c("A", "B", "C"),
+seats_ha(parties = c('A', 'B', 'C'),
        votes = c(100, 150, 60),
        n_seats = 5,
-       method = "dhondt")
+       method = 'dhondt')
 
-seats_ha(parties = c("V", "W", "X", "Y", "Z"),
+seats_ha(parties = c('V', 'W', 'X', 'Y', 'Z'),
       votes = c(100, 150, 60, 80, 160),
       n_seats = 15,
-      method = "webster")
+      method = 'webster')
 }

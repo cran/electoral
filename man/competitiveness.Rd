@@ -5,7 +5,7 @@
 competitiveness(votes)
 }
 \arguments{
-\item{votes}{greater-than-1-length vector of number/share of votes/seats per party}
+\item{votes}{2_or_more-length vector of number/share of votes/seats per party}
 }
 \value{
 A single numeric with electoral competitiveness value in the interval [0, 1]

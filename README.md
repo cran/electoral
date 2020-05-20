@@ -1,9 +1,19 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 electoral
-=========
+---------
 
-The goal of electoral is compute highest averages largest remainders allocating seats methods and party system scores: competitiveness, concentration, effective number of parties, party nationalization score, party system nationalization score and volatility
+The goal of electoral package is provide simple functions to compute allocating seats methods and party system scores
+
+Implemented allocating seats methods are:
+
+For highest averages group: D'Hondt, Webster, Danish, Imperiali, Hill-Huntington, Dean, Modified Sainte-Lague, Equal proportions and Adams.
+
+For largest remainders group: Hare, Droop, Hangenbach-Bischoff, Imperial, Modified Imperial, Quotas&Remainders.
+
+Developed party system scores are:
+
+Competitiveness, concentration, effective number of parties (ENP), party nationalization score (PNS), party system nationalization score (PSNS) and volatility. Effective number of parties implemented methods are Laakso-Taagepera and Golosov. Available party nationalization score and party system nationalization score methods are Jones-Mainwaring and Golosov.
 
 Installation
 ------------
@@ -21,7 +31,7 @@ devtools::install_github("albuja/electoral")
 Examples
 --------
 
-This is a basic example which shows you how to allocate seats by two common methods:
+This is a basic example which shows you how to allocate seats by two common methods (D'Hondt and Hare):
 
 ``` r
 library(electoral)
@@ -39,7 +49,7 @@ seats_lr(parties = c("A", "B", "C"),
        method = "hare")
 ```
 
-This is a basic example which shows you how to compute effective number of parties:
+This is a basic example which shows you how to compute effective number of parties using Laakso-Taagepera method:
 
 ``` r
 library(electoral)

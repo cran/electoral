@@ -1,8 +1,4 @@
-#  Parties System Indicators
-#
-# Competitiveness
-# Consejo Nacional Electoral - Ecuador (2014)
-#
+#  Party System Indicators - Competitiveness----
 
 competitiveness <- function(votes) {
      if (class(votes) != 'numeric') {
