@@ -8,7 +8,7 @@ seats_lr(parties, votes, n_seats, method)
 \item{parties}{vector of names of parties, must be uniques}
 \item{votes}{vector of votes, same length as parties.}
 \item{n_seats}{number of seats to be allocated (integer equal or greater 1).}
-\item{method}{string according seat allocating method: 'hare', 'droop', 'hangenbach-bischoff', 'imperial', 'mod-imperial' or 'quotas-remainders'.}
+\item{method}{string according seat allocating method: "hare", "droop", "hangenbach-bischoff", "imperial", "mod-imperial" or "quotas-remainders".}
 }
 \value{
 A vector of the number seats allocated for each party.
@@ -34,16 +34,18 @@ Quotas & remainders:
 
 In case of ties, the implemented algorithm not allocate the involved seats, and prints how many seats had been allocated and how many are in tie.
 
+More information: https://en.wikipedia.org/wiki/Largest_remainder_method
+
 Developed by Jorge Albuja Delgado (albuja@yahoo.com).
 }
 \examples{
-seats_lr(parties = c('A', 'B', 'C'),
+seats_lr(parties = c("A", "B", "C"),
        votes = c(100, 150, 60),
        n_seats = 5,
-       method = 'hare')
+       method = "hare")
 
-seats_lr(parties = c('V', 'W', 'X', 'Y', 'Z'),
+seats_lr(parties = c("V", "W", "X", "Y", "Z"),
       votes = c(100, 150, 60, 80, 160),
       n_seats = 15,
-      method = 'droop')
+      method = "droop")
 }

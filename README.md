@@ -18,7 +18,12 @@ Competitiveness, concentration, effective number of parties (ENP), party nationa
 Installation
 ------------
 
-You can install electoral from github with:
+You can install electoral directly from CRAN:
+``` r
+install.packages("electoral")
+```
+
+Or install it from GitHub with:
 
 ``` r
 if (!require("devtools")) {
@@ -36,14 +41,12 @@ This is a basic example which shows you how to allocate seats by two common meth
 ``` r
 library(electoral)
 
-seats_ha(parties = c("A", "B", "C"),
+seats(parties = c("A", "B", "C"),
        votes = c(100, 150, 60),
        n_seats = 5,
        method = "dhondt")
-#> [1] "IMPORTANT:  4 seats had been allocated. There is(are) 1 seats with tie."
-#> [1] "Parties in tie:" "A"               "B"
 
-seats_lr(parties = c("A", "B", "C"),
+seats(parties = c("A", "B", "C"),
        votes = c(100, 150, 60),
        n_seats = 5,
        method = "hare")
@@ -55,5 +58,4 @@ This is a basic example which shows you how to compute effective number of parti
 library(electoral)
 
 enp(votes = c(100, 150, 60))
-#> [1] 2.66205
 ```
