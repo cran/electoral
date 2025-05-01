@@ -1,9 +1,12 @@
 Package: electoral
 Type: Package
 Title: Allocating Seats Methods and Party System Scores
-Version: 0.1.3
-Author: Jorge Albuja
+Version: 0.1.4
 Maintainer: Jorge Albuja <albuja@yahoo.com>
+Authors@R: person(given = "Jorge",
+                  family = "Albuja",
+                  role = c("aut", "cre"),
+                  email = "albuja@yahoo.com")
 Description: Highest averages & largest remainders allocating seats methods and
     several party system scores.
     Implemented highest averages allocating seats methods are D'Hondt, Webster,
@@ -19,17 +22,17 @@ Description: Highest averages & largest remainders allocating seats methods and
     References:
     Gallagher (1991) <doi:10.1016/0261-3794(91)90004-C>.
     Norris (2004, ISBN:0-521-82977-1).
-    Consejo Nacional Electoral del Ecuador (2014)<http://cne.gob.ec/documents/Estadisticas/Atlas/ATLAS/CAPITULO%206%20web.pdf>.
-    Laakso & Taagepera (1979) <https://journals.sagepub.com/doi/pdf/10.1177/001041407901200101>.
+    Laakso & Taagepera (1979) <https://escholarship.org/uc/item/703827nv>.
     Jones & Mainwaring (2003) <https://kellogg.nd.edu/sites/default/files/old_files/documents/304_0.pdf>.
     Pedersen (1979) <https://janda.org/c24/Readings/Pedersen/Pedersen.htm>.
-    Golosov (2010) <https://ppq.sagepub.com/content/16/2/171.abstract>.
-    Golosov (2014) <https://ppq.sagepub.com/content/early/2014/09/08/1354068814549342.abstract>.
+    Golosov (2010) <doi:10.1177/1354068809339538>.
+    Golosov (2014) <doi:10.1177/1354068814549342>.
 License: GPL-3
 Encoding: UTF-8
 Imports: dplyr, ineq, tibble
 RoxygenNote: 6.0.1
 NeedsCompilation: no
-Packaged: 2022-03-31 22:06:10 UTC; jorgea
+Packaged: 2025-05-01 00:56:02 UTC; jorgea
+Author: Jorge Albuja [aut, cre]
 Repository: CRAN
-Date/Publication: 2022-03-31 22:40:06 UTC
+Date/Publication: 2025-05-01 05:00:02 UTC

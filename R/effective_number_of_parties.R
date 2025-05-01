@@ -1,7 +1,7 @@
 #  Party System Indicators - Effective Number of Parties (ENP)----
 
 enp <- function(votes, method = 'Laakso-Taagepera') {
-  if (class(votes) != 'numeric') {
+  if (!is.numeric(votes)) {
     stop('Votes input vector must be numeric')
   }
   if (!method %in%  c('Laakso-Taagepera', 'Golosov')) {

@@ -1,7 +1,7 @@
 #  Parties System Indicators - Party Nationalization Score (PNS)----
 
 pns <- function(subnational_shares, method = 'Jones-Mainwaring') {
-  if (class(subnational_shares) != 'numeric') {
+  if (!is.numeric(subnational_shares)) {
     stop('Input vector must be numeric')
   }
   if (is.na(sum(subnational_shares))) {

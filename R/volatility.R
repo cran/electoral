@@ -5,7 +5,7 @@
 #
 
 volatility <- function(votes_1, votes_2) {
-     if (class(votes_1) != 'numeric' | class(votes_2) != 'numeric' ) {
+     if (!is.numeric(votes_1) | !is.numeric(votes_2)) {
           stop('Both input vectors must be numeric')
      }
      if (length(votes_1) != length(votes_2)) {
